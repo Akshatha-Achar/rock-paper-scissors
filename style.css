@@ -17,6 +17,308 @@ body {
   height: 100vh;
 }
 #main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* title section styling */
+#title-container {
+  width: 50%;
+  height: auto;
+  padding: 0.7rem;
+  margin: 1rem;
+  background: #eee0e0;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-text {
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-align: center;
+  color: #0f3460;
+}
+
+/* playboard section styling */
+#board {
+  width: 50%;
+  height: auto;
+  padding: 1rem;
+  background: #16213e;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.level-container {
+  width: 7rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  background: rgb(103, 218, 243);
+  box-shadow: inset 0px 4px 4px rgba(190, 214, 226, 0.931);
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.level-text {
+  font-weight: 600;
+  color: #400b68;
+}
+.level-count {
+  font-weight: 600;
+  color: #d01537;
+}
+
+/* score section styles */
+#scores-section {
+  width: 90%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.scores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.score1-button,
+.score2-button {
+  width: 7rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  background: #533483;
+  border-radius: 0.5rem;
+  border: none;
+}
+.scores-div {
+  width: 7rem;
+  height: 2.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  mix-blend-mode: normal;
+  border-radius: 0.7rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.score1-value,
+.score2-value {
+  font-size: 2rem;
+  color: black;
+}
+
+/* restart button styling */
+.restart {
+  width: 7rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  background: #1e588dfa;
+  box-shadow: inset 0px 4px 4px #68a1d6fa;
+  border-radius: 0.8rem;
+  border: solid 1px #0f2c48fa;
+}
+
+/* comment section styling */
+.display-text {
+  width: 80%;
+  height: auto;
+  margin: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* players section styling */
+.players-section {
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 1rem;
+  background: #e94560;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-button {
+  width: 7rem;
+  height: 2rem;
+  background: #e94560;
+  box-shadow: inset 0px 4px 4px #f5a7b4;
+  border-radius: 1rem;
+  border: solid 2px #402a2f;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 1.1rem;
+    line-height: 0.5rem;
+  }
+  #title-container {
+    width: 55%;
+    padding: 0.6rem;
+    margin: 0.8rem;
+    border-radius: 2rem;
+  }
+  #title-text {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  #board {
+    width: 60%;
+    padding: 0.8rem;
+    border-radius: 1rem;
+  }
+  .level-container {
+    width: 6rem;
+    height: 1.8rem;
+    margin-bottom: 0.4rem;
+    border-radius: 0.8rem;
+  }
+  #scores-section {
+    margin-bottom: 0.4rem;
+  }
+  .score1-button,
+  .score2-button {
+    width: 6rem;
+    height: 1.7rem;
+    margin-bottom: 0.4rem;
+    border-radius: 0.3rem;
+  }
+  .scores-div {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+  }
+  .score1-value,
+  .score2-value {
+    font-size: 1.8rem;
+  }
+
+  .restart {
+    width: 6rem;
+    height: 1.8rem;
+    margin-bottom: 0.4rem;
+    border-radius: 0.8rem;
+  }
+  .display-text {
+    font-size: 1.1rem;
+  }
+  .card {
+    width: 6rem;
+    height: 6rem;
+  }
+  .player-button {
+    width: 6rem;
+    height: 1.8rem;
+    border-radius: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  * {
+    font-size: 1rem;
+    line-height: 0.4rem;
+  }
+
+  #title-container {
+    width: 65%;
+    padding: 0.4rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+  }
+  #title-text {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  #board {
+    width: 65%;
+  }
+  .level-container {
+    width: 5rem;
+    height: 1.5rem;
+    margin-bottom: 0.3rem;
+    border-radius: 0.5rem;
+  }
+  #scores-section {
+    margin-bottom: 0.3rem;
+  }
+  .score1-button,
+  .score2-button {
+    width: 4rem;
+    height: 1.2rem;
+    margin-bottom: 0.3rem;
+    border-radius: 0.8rem;
+  }
+  .scores-div {
+    width: 4rem;
+    height: 1.7rem;
+    border-radius: 0.3rem;
+  }
+  .score1-value,
+  .score2-value {
+    font-size: 1.3rem;
+  }
+
+  .restart {
+    width: 5rem;
+    height: 1.5rem;
+    margin-bottom: 0.3rem;
+    border-radius: 0.5rem;
+  }
+  .display-text {
+    font-size: 1rem;
+  }
+  .card {
+    width: 5rem;
+    height: 5rem;
+  }
+  .player-button {
+    width: 5rem;
+    height: 1.5rem;
+    border-radius: 0.5rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* border: solid 1px black; */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1rem;
+  text-align: center;
+
+  color: #ffffff;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+#main {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
