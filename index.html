@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <!-- <script defer src="script.js"></script> -->
+    <script defer src="script.js"></script>
     <title>Rock Paper Scissors Game</title>
   </head>
   <body>
-    <main id="main">
-      <div id="title-container">
-        <h2 id="title-text">Rock Paper Scissors Game</h2>
+    <main class="main">
+      <div class="title-container">
+        <h2 class="title-text">Rock Paper Scissors Game</h2>
       </div>
 
-      <div id="board">
+      <div class="board">
         <div class="level-container">
           <h4 class="level-text">LEVEL:</h4>
-          <span class="level-count">0</span>
+          <span class="level-count">1</span>
         </div>
 
-        <div id="scores-section">
+        <div class="scores-section">
           <div class="scores">
             <button class="score1-button">Score</button>
             <div class="scores-div">
@@ -37,20 +37,30 @@
 
         <button class="restart">Restart</button>
 
-        <h3 class="display-text">Let's begin...</h3>
+        <h3 class="display-text">Press Player 1 button to start..🤩</h3>
 
         <div class="players-section">
           <div class="player1-container">
-            <div class="card">
-              <h4 class="card1">Rock</h4>
+            <div class="card1">
+              <img
+                src="src/Rock.png"
+                id="img1"
+                class="hidden"
+                alt="card1_image"
+              />
             </div>
-            <button class="player-button player1">Player1</button>
+            <button class="player-button player1">Player 1</button>
           </div>
           <div class="player2-container">
-            <div class="card">
-              <h4 class="card2">Paper</h4>
+            <div class="card2">
+              <img
+                src="src/Paper.png"
+                id="img2"
+                class="hidden"
+                alt="card2_image"
+              />
             </div>
-            <button class="player-button player2">Player2</button>
+            <button class="player-button player2">Player 2</button>
           </div>
         </div>
       </div>
