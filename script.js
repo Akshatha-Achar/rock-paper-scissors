@@ -60,7 +60,6 @@ player2.addEventListener("click", function () {
     level.textContent = level_count + 1;
   } else {
     comment.classList.remove("hidden");
-    comment.classList.add("winner-text");
     let result = "";
     if (player2_score === player1_score) {
       result = `It's a Draw.`;
@@ -72,6 +71,7 @@ player2.addEventListener("click", function () {
     comment.textContent = `Game ended...🚩
     ${result}
     Press "RESTART" button to play`;
+    comment.classList.add("winner-text");
     img1.classList.add("hidden");
     img2.classList.add("hidden");
 
