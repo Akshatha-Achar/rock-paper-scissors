@@ -204,9 +204,16 @@ body {
   transform: translateY(4px);
 }
 .winner-text {
+  width: 70%;
+  height: auto;
+  margin: 1.5rem;
+  text-align: center;
   font-size: 1.5rem;
-  line-height: 1.5rem;
-  padding: 0.5rem;
+  line-height: 2.5rem;
+  padding: 2rem;
+  background-color: rgba(234, 216, 182, 0.937);
+  border-radius: 0.5rem;
+  color: rgb(219, 25, 25);
 }
 
 @media screen and (max-width: 768px) {
